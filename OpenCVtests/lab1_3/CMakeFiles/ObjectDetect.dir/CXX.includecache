@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jet/OpenCVtests/lab1_3/ObjectDetect.cpp
+stdio.h
+-
+my_blobs.h
+/home/jet/OpenCVtests/lab1_3/my_blobs.h
+
+/home/jet/OpenCVtests/lab1_3/my_blobs.h
+iostream
+-
+vector
+-
+opencv2/opencv.hpp
+-
+

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jet/OpenCVtests/lab1_2/LineDetect.cpp
+opencv2/highgui/highgui.hpp
+/home/jet/OpenCVtests/lab1_2/opencv2/highgui/highgui.hpp
+opencv2/imgproc/imgproc.hpp
+/home/jet/OpenCVtests/lab1_2/opencv2/imgproc/imgproc.hpp
+stdio.h
+-
+
