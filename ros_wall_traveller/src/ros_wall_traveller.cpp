@@ -94,7 +94,7 @@ void ros_wall_traveller::rightEncoderCallback(const std_msgs::Int64::ConstPtr& m
 void ros_wall_traveller::midsonarCallback(const std_msgs::Int16::ConstPtr& msg)
 {
   M = msg->data; //message data for midsonarCallback
-  	//evaluate FSM for using leftsonarCallback
+  	//evaluate FSM for using midsonarCallback
 	FSM();
 }
   
@@ -108,11 +108,11 @@ void ros_wall_traveller::leftsonarCallback(const std_msgs::Int16::ConstPtr& msg)
 void ros_wall_traveller::rightsonarCallback(const std_msgs::Int16::ConstPtr& msg)
 {
 	R = msg->data; //message data for rightsonarCallback
-	//evaluate FSM
+	//evaluate FSM for using rightsonarCallback
 	FSM();
 }
 /* Finite State Machine(FSM */
-void ros_wall_traveller::FSM() // function responsible for managing state stransitions of the robot based on senspr inputs
+void ros_wall_traveller::FSM() // function responsible for managing state stransitions of the robot based on sensor inputs
 {
 switch(state)
 {
